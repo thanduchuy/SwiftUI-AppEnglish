@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Sentence" representedClassName=".Sentence" syncable="YES">
+        <attribute name="answer" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="category" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="question" optional="YES" attributeType="String" defaultValueString=""/>
+    </entity>
+    <entity name="Tense" representedClassName=".Tense" syncable="YES">
+        <attribute name="answer" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="category" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="question" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="translate" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="typeTense" optional="YES" attributeType="String" defaultValueString=""/>
+    </entity>
+    <entity name="TheoryTense" representedClassName=".TheoryTense" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="recipe" optional="YES" attributeType="Transformable"/>
+        <attribute name="signal" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="use" optional="YES" attributeType="Transformable"/>
+    </entity>
+    <entity name="Topic" representedClassName=".Topic" syncable="YES">
+        <attribute name="categoryTopic" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="idTopic" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="imageTopic" optional="YES" attributeType="Binary"/>
+        <attribute name="nameTopic" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="pointTopic" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Vocab" representedClassName=".Vocab" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="info" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="nameEN" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="nameVN" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="spelling" optional="YES" attributeType="String" defaultValueString=""/>
+    </entity>
+    <elements>
+        <element name="Sentence" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Topic" positionX="-54" positionY="18" width="128" height="118"/>
+        <element name="TheoryTense" positionX="-36" positionY="54" width="128" height="118"/>
+        <element name="Vocab" positionX="-18" positionY="63" width="128" height="148"/>
+        <element name="Tense" positionX="0" positionY="108" width="128" height="118"/>
+    </elements>
+</model>
